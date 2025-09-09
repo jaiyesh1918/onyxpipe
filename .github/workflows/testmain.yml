@@ -21,7 +21,7 @@ jobs:
           pip install -r requirements.txt   # 👈 installs Flask and other libs
 
       - name: Run unit tests (test_app.py)
-        run: python -m unittest -v app.py
+        run: python -m unittest discover -s . -p "test*.py"
 
   deploy:
     needs: test
