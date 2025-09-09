@@ -2,7 +2,7 @@ name: CICDDEMO
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   deploy:
